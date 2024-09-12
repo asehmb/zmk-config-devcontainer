@@ -13,6 +13,18 @@ build-nrfmicro-reset(){
     base-build nrfmicro_13 settings_reset
 }
 
+sofle-left(){
+    base-build nice_nano_v2 sofle_left
+}
+
+sofle-right(){
+    base-build nice_nano_v2 sofle_right
+}
+
+nice_nano_v2-reset(){
+    base-build nice_nano_v2 settings_reset
+}
+
 # the first param is a board, the second is a shield
 base-build() ( # use a subshell
     set -e # to exit the subshell as soon as an error happens
